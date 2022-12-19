@@ -1,13 +1,13 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const Header = () => {
+const Projects = () => {
   return (
     <>
-      <Typography>Main</Typography>
+            <Typography>Projects</Typography>
     </>
   );
 };
 
-export default Header;
+export default Projects;
 

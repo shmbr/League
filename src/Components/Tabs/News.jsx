@@ -1,13 +1,13 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const Header = () => {
+const News = () => {
   return (
     <>
-      <Typography>Main</Typography>
+            <Typography>News</Typography>
     </>
   );
 };
 
-export default Header;
+export default News;
 

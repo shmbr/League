@@ -1,12 +1,12 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const Home = () => {
+const Calendar = () => {
   return (
     <>
-      <Typography>Home</Typography>
+      <Typography>Calendar</Typography>
     </>
   );
 };
 
-export default Home;
+export default Calendar;

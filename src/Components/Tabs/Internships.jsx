@@ -1,12 +1,13 @@
 import { Typography } from "@mui/material";
 import React from "react";
 
-const Contact = () => {
+const Internships = () => {
   return (
     <>
-      <Typography>Contact</Typography>
+      <Typography>Internships</Typography>
     </>
   );
 };
 
-export default Contact;
+export default Internships;
+
