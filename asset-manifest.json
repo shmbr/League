@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/League/static/css/main.e6c13ad2.css",
+    "main.js": "/League/static/js/main.73a71273.js",
+    "static/js/787.203f3ee8.chunk.js": "/League/static/js/787.203f3ee8.chunk.js",
+    "static/media/logo-square.png": "/League/static/media/logo-square.164f36cd4b2ce3267c9e.png",
+    "index.html": "/League/index.html",
+    "main.e6c13ad2.css.map": "/League/static/css/main.e6c13ad2.css.map",
+    "main.73a71273.js.map": "/League/static/js/main.73a71273.js.map",
+    "787.203f3ee8.chunk.js.map": "/League/static/js/787.203f3ee8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.73a71273.js"
+  ]
+}
