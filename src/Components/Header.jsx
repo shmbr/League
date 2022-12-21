@@ -1,7 +1,7 @@
-import { CardMedia, Button, Grid } from "@mui/material";
+import { CardMedia, Button, Grid,  } from "@mui/material";
 import React from "react";
 import Logo from "../Images/logo-square.png";
-import Flag from "../Images/flag.jpg";
+//import Flag from "../Images/flag.jpg";
 //import StandWith from "../Images/Untitled.png";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
         <Grid
           item
           xs={12}
-          sm={4}
+          sm={6}
           sx={{
             display: "flex",
             alignItems: "center",
@@ -31,7 +31,7 @@ const Header = () => {
           />
         </Grid>
 
-        <Grid
+        {/* <Grid
           item
           sm={4}
           xs={12}
@@ -42,21 +42,25 @@ const Header = () => {
             justifyContent: "center",
           }}
         >
-          <CardMedia
-            component="img"
-            image={Flag}
-            sx={{
-              height: 100,
-              width: 290,
-              display: "flex",
-            }}
-          />
-        </Grid>
+          <Box sx={{ display: { md: "block", xs: "none" } }}>
+            <CardMedia
+              display={{ xs: "block", md: "none" }}
+              component="img"
+              image={Flag}
+              
+              sx={{
+                height: 100,
+                width: 300,
+                display: "flex",
+              }}
+            />
+          </Box>
+        </Grid> */}
 
         <Grid
           item
           xs={12}
-          sm={4}
+          sm={6}
           sx={{
             display: "flex",
             alignItems: "center",

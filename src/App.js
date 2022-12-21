@@ -8,19 +8,16 @@ import { Paper } from "@mui/material";
 import TabsControl from "./Components/TabsControl";
 
 function App() {
-
   return (
-    <Box sx={{ pl: { xs: 0, sm: 5, md: 15 }, pr: { xs: 0, sm: 5, md: 15 } }}>
-      <meta name="google-site-verification" content="23jBo2Y6ap4Jev9Fo7Cdc1NNSrcEKyW5I1lxBgIxG0k" />
-      <BrowserRouter width={800}>
+    <BrowserRouter width={800}>
+      <Box sx={{ pl: { xs: 0, sm: 5, md: 15 }, pr: { xs: 0, sm: 5, md: 15 } }}>
         <Paper elevation={3}>
           <Header />
-          <TabsControl/>
-          <Footer />
+          <TabsControl />
           <Footer />
         </Paper>
-      </BrowserRouter>
-    </Box>
+      </Box>
+    </BrowserRouter>
   );
 }
 export default App;
