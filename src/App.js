@@ -1,11 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
 import React from "react";
 import Box from "@mui/material/Box";
-
 import { Paper } from "@mui/material";
-import TabsControl from "./Components/TabsControl";
+import Header from "./Components/App/Header"
+import TabsControl from "./Components/App/TabsControl"
+import Footer from "./Components/App/Footer"
+
+
 
 function App() {
   return (

@@ -1,74 +1,44 @@
 import { Typography, Paper, Grid } from "@mui/material";
 import React from "react";
-import { CardMedia } from "@mui/material";
 
-import ArioCompany from "../../Images/Partners/ario.png";
-import ArzingerCompany from "../../Images/Partners/arzinger.png";
-import SchoolCompany from "../../Images/Partners/high_school.png";
-import PRCompany from "../../Images/Partners/law_gazeta.jpg";
-import GazetaCompany from "../../Images/Partners/law_pr.jpg";
+import PRCompany from "../../Images/Main/Partners/1.png";
+import SchoolCompany from "../../Images/Main/Partners/2.png";
+import ArioCompany from "../../Images/Main/Partners/3.png";
+import ArzingerCompany from "../../Images/Main/Partners/4.png";
+import GazetaCompany from "../../Images/Main/Partners/5.png";
+
+import PartnerCard from "./PartnerCard";
 
 const Partners = () => {
   return (
     <>
-      <Paper sx={{ background: "yellow" }}>
-        <Typography textAlign={"center"}>Partners</Typography>
-      </Paper>
+      <Paper sx={{ p: 1 }}>
+          <Typography textAlign={"center"} variant={"h4"} sx={{p:3}}>Партнери Ліги</Typography>
 
-      <Grid container>
-        <Grid item xs={12} md={4}>
-          <CardMedia
-            component="img"
-            image={ArioCompany}
-            sx={{
-              // height: 30,
-              // width: 40,
-              display: "flex",
-            }}
+
+        <Grid container sx={{ p: 1 }}>
+          <PartnerCard
+            companyImage={SchoolCompany}
+            companyTitle={"Освітній партнер"}
+          />
+          <PartnerCard
+            companyImage={ArioCompany}
+            companyTitle={"Річний партнер"}
+          />
+          <PartnerCard
+            companyImage={ArzingerCompany}
+            companyTitle={"Експертний партнер"}
+          />
+          <PartnerCard
+            companyImage={GazetaCompany}
+            companyTitle={"Інформаційний партнер"}
+          />
+          <PartnerCard
+            companyImage={PRCompany}
+            companyTitle={"Інформаційний партнер"}
           />
         </Grid>
-        
-      </Grid>
-
-      <CardMedia
-        component="img"
-        image={ArioCompany}
-        sx={{
-          // height: 30,
-          // width: 40,
-          display: "flex",
-        }}
-      />
-
-      <CardMedia
-        component="img"
-        image={ArzingerCompany}
-        sx={{
-          display: "flex",
-        }}
-      />
-      <CardMedia
-        component="img"
-        image={SchoolCompany}
-        sx={{
-          display: "flex",
-        }}
-      />
-
-      <CardMedia
-        component="img"
-        image={GazetaCompany}
-        sx={{
-          display: "flex",
-        }}
-      />
-      <CardMedia
-        component="img"
-        image={PRCompany}
-        sx={{
-          display: "flex",
-        }}
-      />
+      </Paper>
     </>
   );
 };

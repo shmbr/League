@@ -4,14 +4,14 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import Main from "./Tabs/Main";
-import About from "./Tabs/About";
-import News from "./Tabs/News";
-import Calendar from "./Tabs/Calendar";
-import Projects from "./Tabs/Projects";
-import Internships from "./Tabs/Internships";
-import Partners from "./Tabs/Partners";
-import Contacts from "./Tabs/Contacts";
+import Main from "../Tabs/Main";
+import About from "../Tabs/About";
+import News from "../Tabs/News";
+import Calendar from "../Tabs/Calendar";
+import Projects from "../Tabs/Projects";
+import Internships from "../Tabs/Internships";
+import Partners from "../Tabs/Partners";
+import Contacts from "../Tabs/Contacts";
 
 const TabsControl = () => {
   const [value, setValue] = React.useState("1");
@@ -50,7 +50,7 @@ const TabsControl = () => {
           </TabList>
         </Box>
 
-        <TabPanel value="1">
+        <TabPanel value="1" >
           <Main />
         </TabPanel>
         <TabPanel value="2">

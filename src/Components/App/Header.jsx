@@ -1,6 +1,6 @@
 import { CardMedia, Button, Grid,  } from "@mui/material";
 import React from "react";
-import Logo from "../Images/logo-square.png";
+import Logo from "../../Images/Main/logo-square.png";
 //import Flag from "../Images/flag.jpg";
 //import StandWith from "../Images/Untitled.png";
 
