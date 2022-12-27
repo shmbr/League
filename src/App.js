@@ -20,10 +20,6 @@ function App() {
       <BrowserRouter>
         <Box
           sx={{
-
-
-            // pl: { xs: 0, sm: 5, md: 15 },
-            // pr: { xs: 0, sm: 5, md: 15 },
             maxWidth: 900,
           }}
         >
