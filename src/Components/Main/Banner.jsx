@@ -1,13 +1,13 @@
 import React from "react";
 import { CardMedia } from "@mui/material";
-import Banner from "../../Images/Main/homme_banner_2.png";
+import BannerImg from "../../Images/Main/homme_banner_2.png";
 
-const HomeBanner = () => {
+const Banner = (props) => {
   return (
     <>
       <CardMedia
         component="img"
-        image={Banner}
+        image={props.img}
         sx={{
           display: "flex",
         }}
@@ -16,4 +16,4 @@ const HomeBanner = () => {
   );
 };
 
-export default HomeBanner;
+export default Banner;

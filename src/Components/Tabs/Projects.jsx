@@ -1,13 +1,13 @@
-import { Typography } from "@mui/material";
 import React from "react";
+import BannerImg from "../../Images/Projects/projects.jpg";
+import Banner from "../Main/Banner";
 
 const Projects = () => {
   return (
     <>
-            <Typography>Projects</Typography>
+      <Banner img={BannerImg} />
     </>
   );
 };
 
 export default Projects;
-

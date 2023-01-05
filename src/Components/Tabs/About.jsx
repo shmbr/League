@@ -1,10 +1,11 @@
-import { Typography } from "@mui/material";
 import React from "react";
+import BannerImg from "../../Images/About/photo332434.png";
+import Banner from "../Main/Banner";
 
 const About = () => {
   return (
     <>
-      <Typography>About</Typography>
+      <Banner img={BannerImg} />
     </>
   );
 };
