@@ -1,17 +1,14 @@
-import { Typography, Paper, Box, Button } from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import React from "react";
-//import { CardMedia } from "@mui/material";
-import Aeque from "../../Images/Main/Cooperation/aequo.jpg";
-import Avellum from "../../Images/Main/Cooperation/avellum.jpg";
-import Cms from "../../Images/Main/Cooperation/cms.jpg";
-import Eba from "../../Images/Main/Cooperation/eba.jpg";
-import Eterna from "../../Images/Main/Cooperation/eterna.jpg";
-import Ey from "../../Images/Main/Cooperation/ey.jpg";
-import Kpmg from "../../Images/Main/Cooperation/kpmg.jpg";
-import Lcf from "../../Images/Main/Cooperation/lcf.jpg";
-
-import Banner1 from "../../Images/Main/home_banner_2.png";
-
+import Aeque from "../../../Images/Main/Cooperation/aequo.jpg";
+import Avellum from "../../../Images/Main/Cooperation/avellum.jpg";
+import Cms from "../../../Images/Main/Cooperation/cms.jpg";
+import Eba from "../../../Images/Main/Cooperation/eba.jpg";
+import Eterna from "../../../Images/Main/Cooperation/eterna.jpg";
+import Ey from "../../../Images/Main/Cooperation/ey.jpg";
+import Kpmg from "../../../Images/Main/Cooperation/kpmg.jpg";
+import Lcf from "../../../Images/Main/Cooperation/lcf.jpg";
+import Banner1 from "../../../Images/Main/home_banner_2.png";
 import { CardMedia, Grid } from "@mui/material";
 
 const list = ["Aeque", "Avellum", "Cms", "Eba", "Eterna", "Ey", "Kpmg", "Lcf"];
@@ -20,9 +17,10 @@ const img = [Aeque, Avellum, Cms, Eba, Eterna, Ey, Kpmg, Lcf];
 const Cooperation = () => {
   return (
     <>
-      <Paper
+      <Box
         sx={{
           backgroundImage: `url(${Banner1})`,
+          backgroundSize:"cover"
         }}
       >
         <Box sx={{ p: 3 }} textAlign={"center"}>
@@ -65,9 +63,9 @@ const Cooperation = () => {
                   </Grid>
 
                   <Grid item>
-                    <Typography  sx={{ p: 1 }}>
+                    {/* <Typography  sx={{ p: 1 }}>
                       {item}
-                    </Typography>
+                    </Typography> */}
                   </Grid>
                 </Grid>
               </Box>
@@ -76,7 +74,7 @@ const Cooperation = () => {
 
           <Button sx={{ color: "white", mt: 3 }}>Детальніше</Button>
         </Box>
-      </Paper>
+      </Box>
     </>
   );
 };

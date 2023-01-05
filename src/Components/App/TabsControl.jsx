@@ -21,7 +21,7 @@ const TabsControl = () => {
   };
 
   return (
-    <Box sx={{ width: "100%", typography: "body1" }}>
+    <Box sx={{ width: 1, typography: "body1" }}>
       <TabContext value={value}>
         <Box
           sx={{
@@ -37,7 +37,7 @@ const TabsControl = () => {
             scrollButtons={false}
             onChange={handleChange}
             aria-label="lab API tabs example"
-            sx={{}}
+            //sx={{ width: 0.5 }}
           >
             <Tab label="Головна" value="1" />
             <Tab label="Про нас" value="2" />
@@ -49,31 +49,32 @@ const TabsControl = () => {
             <Tab label="Контакти" value="8" />
           </TabList>
         </Box>
-
-        <TabPanel value="1" >
-          <Main />
-        </TabPanel>
-        <TabPanel value="2">
-          <About />
-        </TabPanel>
-        <TabPanel value="3">
-          <News />
-        </TabPanel>
-        <TabPanel value="4">
-          <Calendar />
-        </TabPanel>
-        <TabPanel value="5">
-          <Projects />
-        </TabPanel>
-        <TabPanel value="6">
-          <Internships />
-        </TabPanel>
-        <TabPanel value="7">
-          <Partners />
-        </TabPanel>
-        <TabPanel value="8">
-          <Contacts />
-        </TabPanel>
+        <Box >
+          <TabPanel value="1" sx={{ p:0 }}>
+            <Main />
+          </TabPanel>
+          <TabPanel value="2">
+            <About />
+          </TabPanel>
+          <TabPanel value="3">
+            <News />
+          </TabPanel>
+          <TabPanel value="4">
+            <Calendar />
+          </TabPanel>
+          <TabPanel value="5">
+            <Projects />
+          </TabPanel>
+          <TabPanel value="6">
+            <Internships />
+          </TabPanel>
+          <TabPanel value="7">
+            <Partners />
+          </TabPanel>
+          <TabPanel value="8">
+            <Contacts />
+          </TabPanel>
+        </Box>
       </TabContext>
     </Box>
   );
