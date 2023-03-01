@@ -1,21 +1,15 @@
-import * as React from 'react';
-import ListSubheader from '@mui/material/ListSubheader';
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Collapse from '@mui/material/Collapse';
+import * as React from "react";
+import ListSubheader from "@mui/material/ListSubheader";
+import List from "@mui/material/List";
 
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import StarBorder from '@mui/icons-material/StarBorder';
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
+import GavelIcon from "@mui/icons-material/Gavel";
+import ListItem from "../../MenuList/ListItem";
+import { Grid } from "@mui/material";
 
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
-import GavelIcon from '@mui/icons-material/Gavel';
-
- const FooterSummaryList = () => {
-  const [open, setOpen] = React.useState(true);
+const FooterSummaryList = () => {
+  const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
     setOpen(!open);
@@ -23,7 +17,7 @@ import GavelIcon from '@mui/icons-material/Gavel';
 
   return (
     <List
-      sx={{ width: '30%', maxWidth: 360, bgcolor: 'background.paper' }}
+      sx={{ width: "100%", bgcolor: "background.paper" }}
       component="nav"
       aria-labelledby="nested-list-subheader"
       subheader={
@@ -32,67 +26,40 @@ import GavelIcon from '@mui/icons-material/Gavel';
         </ListSubheader>
       }
     >
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <CalendarMonthIcon />
-        </ListItemIcon>
-        <ListItemText primary="Календар" />
-        {open ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-
-      <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarBorder />
-            </ListItemIcon>
-            <ListItemText primary="Starred" />
-          </ListItemButton>
-        </List>
-      </Collapse>
-
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <ReceiptLongIcon />
-        </ListItemIcon>
-        <ListItemText primary="Новини" />
-        {open ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-
-      <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarBorder />
-            </ListItemIcon>
-            <ListItemText primary="Starred" />
-          </ListItemButton>
-        </List>
-      </Collapse>
-
-
-      <ListItemButton onClick={handleClick}>
-        <ListItemIcon>
-          <GavelIcon />
-        </ListItemIcon>
-        <ListItemText primary="Про нас" />
-        {open ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-
-      <Collapse in={open} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemIcon>
-              <StarBorder />
-            </ListItemIcon>
-            <ListItemText primary="Starred" />
-          </ListItemButton>
-        </List>
-      </Collapse>
-
-
+      <Grid container>
+        <Grid item xs={4}>
+          <ListItem
+            props={{
+              open: open,
+              handleClick: handleClick,
+              text: "Календар",
+              mainIcon: <CalendarMonthIcon />,
+            }}
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <ListItem
+            props={{
+              open: open,
+              handleClick: handleClick,
+              text: "Новини",
+              mainIcon: <ReceiptLongIcon />,
+            }}
+          />
+        </Grid>
+        <Grid item xs={4}>
+          <ListItem
+            props={{
+              open: open,
+              handleClick: handleClick,
+              text: "Про нас",
+              mainIcon: <GavelIcon />,
+            }}
+          />
+        </Grid>
+      </Grid>
     </List>
   );
-}
+};
 
 export default FooterSummaryList;

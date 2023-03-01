@@ -1,15 +1,15 @@
 import { Card, Typography } from "@mui/material";
 import React from "react";
-import FooterSummaryList from "./Footer/FooterSummaryList";
+//import FooterSummaryList from "./Footer/FooterSummaryList";
 
 const Footer = () => {
   return (
     <>
       <Card sx={{ 
-        background: "white",
-        //background: "#e7e7e7",
+        background: "#e7e7e7",
         borderRadius: 0, p: 3 }}>
-        <FooterSummaryList />
+        {/* <FooterSummaryList /> */}
+        footer
       </Card>
 
       <Card

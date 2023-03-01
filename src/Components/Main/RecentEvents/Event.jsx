@@ -7,27 +7,29 @@ const Event = ({ eventTitle, eventOverview, eventData }) => {
     <>
       <Box
         sx={{
-          p: 1,
+          p: 0,
           pb: 4,
           pr: 4,
           pl: 4,
+          //maxWidth: 200,
         }}
       >
         <Paper elevation={4}>
           <Box sx={{ p: 4 }}>
             <Grid container>
-              <Grid item sm={2} xs={12} textAlign="center">
-                <Typography>{eventTitle}</Typography>
-                <DateRangeIcon sx={{ fontSize: 40 }} />
-                <Typography> {eventData} </Typography>
+              <Grid item sm={2} xs={12} textAlign="center" sx={{p:1}}>
+                <Paper elevation={3}>
+                  <Typography>{eventTitle}</Typography>
+                  <DateRangeIcon sx={{ fontSize: 40 }} />
+                  <Typography> {eventData} </Typography>
+                </Paper>
               </Grid>
               <Grid item sm={10} xs={12}>
                 <Box sx={{ display: { sm: "block", xs: "none" } }}>
-                  <Typography> {eventOverview}</Typography>
+                  <Typography sx={{p:1}}> {eventOverview}</Typography>
                 </Box>
               </Grid>
             </Grid>
-
           </Box>
         </Paper>
       </Box>

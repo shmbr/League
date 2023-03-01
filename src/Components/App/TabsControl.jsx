@@ -13,11 +13,26 @@ import Internships from "../Tabs/Internships";
 import Partners from "../Tabs/Partners";
 import Contacts from "../Tabs/Contacts";
 
+import ListSubheader from "@mui/material/ListSubheader";
+import List from "@mui/material/List";
+
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
+import GavelIcon from "@mui/icons-material/Gavel";
+import ListItem from "../MenuList/ListItem";
+import { Grid } from "@mui/material";
+
 const TabsControl = () => {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
   };
 
   return (
@@ -47,31 +62,34 @@ const TabsControl = () => {
             <Tab label="Стажування" value="6" />
             <Tab label="Партнери" value="7" />
             <Tab label="Контакти" value="8" />
+
+            <Tab label= "test">
+            </Tab>
           </TabList>
         </Box>
-        <Box >
-          <TabPanel value="1" sx={{ p:0 }}>
+        <Box>
+          <TabPanel value="1" sx={{ p: 0 }}>
             <Main />
           </TabPanel>
-          <TabPanel value="2">
+          <TabPanel value="2" sx={{ p: 0 }}>
             <About />
           </TabPanel>
-          <TabPanel value="3">
+          <TabPanel value="3" sx={{ p: 0 }}>
             <News />
           </TabPanel>
-          <TabPanel value="4">
+          <TabPanel value="4" sx={{ p: 0 }}>
             <Calendar />
           </TabPanel>
-          <TabPanel value="5">
+          <TabPanel value="5" sx={{ p: 0 }}>
             <Projects />
           </TabPanel>
-          <TabPanel value="6">
+          <TabPanel value="6" sx={{ p: 0 }}>
             <Internships />
           </TabPanel>
-          <TabPanel value="7">
+          <TabPanel value="7" sx={{ p: 0 }}>
             <Partners />
           </TabPanel>
-          <TabPanel value="8">
+          <TabPanel value="8" sx={{ p: 0 }}>
             <Contacts />
           </TabPanel>
         </Box>

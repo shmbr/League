@@ -1,14 +1,18 @@
-import { Divider, Box, Typography } from "@mui/material";
 import React from "react";
-import Banner from "../Main/Banner";
-import BannerImg from "../../Images/News/News_Banner.jpg";
-
+import CardWithLabel from "../UI/CardWithLabel";
+import {Box, Divider, Typography} from "@mui/material"
 
 const News = () => {
   return (
     <>
-      <Banner img={BannerImg} />
-      {/* <Box sx={{p:4}}>
+      <CardWithLabel
+        props={{
+          text: "Ліга - це фарби, які роблять студентське життя неймовірно яскравим!",
+          color: "#3a405c",
+        }}
+      />
+
+      <Box sx={{p:4}}>
         <Divider />
         <Typography>Локальні заходи</Typography>
         <Divider />
@@ -18,7 +22,7 @@ const News = () => {
         <Divider />
         <Typography>Новини</Typography>
         <Divider/>
-      </Box> */}
+      </Box>
     </>
   );
 };
