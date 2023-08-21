@@ -9,7 +9,7 @@ const Footer = () => {
         background: "#e7e7e7",
         borderRadius: 0, p: 3 }}>
         {/* <FooterSummaryList /> */}
-        footer
+        footerrrr
       </Card>
 
       <Card
