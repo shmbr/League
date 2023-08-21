@@ -11,6 +11,7 @@ const RecentEvents = () => {
       <Box sx={{ background: "#E7E7E7" }}>
         <Typography textAlign={"center"} variant={"h5"} sx={{ p: 3 }}>
           Найближчі події
+          Найближчі події
         </Typography>
         <Box sx={{ display: "flex", flexWrap: "wrap" }}>
           <Event
