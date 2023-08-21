@@ -62,6 +62,8 @@ const TabsControl = () => {
             <Tab label="Стажування" value="6" />
             <Tab label="Партнери" value="7" />
             <Tab label="Контакти" value="8" />
+            <Tab label="Контакти" value="8" />
+            <Tab label="Контакти" value="8" />
 
             <Tab label= "test">
             </Tab>
