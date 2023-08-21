@@ -1,15 +1,19 @@
 import React from "react";
-import RecentEvents from "../Main/Events/RecentEvents";
+import RecentEvents from "../Main/RecentEvents/RecentEvents";
 import Partners from "../Main/Partners/Partners";
 import Cooperation from "../Main/Cooperation/Cooperation";
-import Banner from "../Main/Banner";
-import BannerImg from "../../Images/Main/homme_banner_2.png";
-
+import CardWithLabel from "../UI/CardWithLabel";
 
 const Main = () => {
   return (
     <>
-      <Banner img={BannerImg}/>
+      <CardWithLabel
+        props={{
+          text: "Одна легенда - безліч історій",
+          color: "#3a405c",
+        }}
+      />
+
       <RecentEvents />
       <Partners />
       <Cooperation />

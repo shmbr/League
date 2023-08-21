@@ -1,14 +1,17 @@
 import React from "react";
-import BannerImg from "../../Images/About/photo332434.png";
-import Banner from "../Main/Banner";
+import CardWithLabel from "../UI/CardWithLabel";
 
 const About = () => {
   return (
     <>
-      <Banner img={BannerImg} />
+      <CardWithLabel
+        props={{
+          text: "Ліга - це окремий Всесвіт!",
+          color: "#3a405c",
+        }}
+      />
     </>
   );
 };
 
 export default About;
-
